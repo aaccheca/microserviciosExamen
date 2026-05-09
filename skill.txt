@@ -1,0 +1,38 @@
+Genera otro microservicio REST completo llamado Profesor.
+
+Requisitos obligatorios:
+
+* Arquitectura en capas:
+  * controller
+  * service
+  * repository
+  * model/entity
+  * dto
+* Debe incluir:
+  * GET listar con paginación
+  * GET by ID
+  * GET by nombre o email
+  * POST
+  * PUT
+  * PATCH
+  * DELETE
+* Validaciones con Jakarta Validation.
+* Manejo de excepciones global.
+* Uso de ResponseEntity.
+* Código limpio y comentado.
+* Maven como gestor de dependencias.
+* Debe compilar y ejecutarse correctamente.
+* Crear estructura completa de archivos.
+* Incluir application.properties.
+* Incluir dependencias necesarias en pom.xml.
+* Agregar ejemplos JSON para pruebas en Postman.
+* La entidad Profesor debe tener:
+  * id
+  * nombre
+  * apellido
+  * email
+  * especialidad
+  * telefono
+* Implementar búsqueda por nombre.
+* Usar PATCH para actualización parcial.
+* Mostrar comandos para ejecutar el proyecto.
