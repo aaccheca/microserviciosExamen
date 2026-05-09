@@ -1,7 +1,5 @@
 # Microservicios con Spring Boot y Eureka
 
-
-
 ## 📋 Descripción del Proyecto
 
 Este proyecto contiene tres microservicios implementados con Spring Boot siguiendo una arquitectura por capas:
