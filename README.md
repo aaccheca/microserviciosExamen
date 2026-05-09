@@ -563,3 +563,8 @@ mvn spring-boot:run # Ejecutar aplicación
 ---
 
 *Microservicio Profesor implementado exitosamente con arquitectura limpia y todas las funcionalidades requeridas.*
+#   m i c r o s e r v i c i o s E x a m e n 
+ 
+ #   m i c r o s e r v i c i o s E x a m e n 
+ 
+ 
