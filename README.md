@@ -64,32 +64,38 @@ src/main/java/com/example/Estudiante/
 
 ## ⚙️ Requisitos Técnicos Cumplidos
 
-✅ **Arquitectura por capas** - Separación clara de responsabilidades  
-✅ **Manejo de JSON** - Serialización/deserialización automática con Spring Web  
-✅ **Entidad JPA** - `Student` con anotaciones y validaciones  
-✅ **Inyección de dependencias** - Uso de `@Service`, `@Repository`, `@Autowired` constructor  
-✅ **Nombres claros y buenas prácticas** - Convenciones Java, paquete organization  
-✅ **Bean Validation** - Validaciones en entidades y DTOs (`@NotBlank`, `@Email`, etc.)  
-✅ **Exception Handling** - `@RestControllerAdvice` centralizado  
-✅ **DTO Pattern** - Separación de modelo interno y externo  
-✅ **ModelMapper** - Mapeo automático entre entidades y DTOs  
+- ✅ **Arquitectura por capas** - Separación clara de responsabilidades
+- ✅ **Manejo de JSON** - Serialización/deserialización automática con Spring Web
+- ✅ **Entidad JPA** - `Student` con anotaciones y validaciones
+- ✅ **Inyección de dependencias** - Uso de `@Service`, `@Repository`, `@Autowired` constructor
+- ✅ **Nombres claros y buenas prácticas** - Convenciones Java, paquete organization
+- ✅ **Bean Validation** - Validaciones en entidades y DTOs (`@NotBlank`, `@Email`, etc.)
+- ✅ **Exception Handling** - `@RestControllerAdvice` centralizado
+- ✅ **DTO Pattern** - Separación de modelo interno y externo
+- ✅ **ModelMapper** - Mapeo automático entre entidades y DTOs
 
 ## 🔗 Endpoints Implementados
 
 ### GET /api/students
+
 Lista todos los estudiantes registrados.
+
 ```bash
 curl -X GET http://localhost:8081/api/students
 ```
 
 ### GET /api/students/{id}
+
 Obtiene un estudiante por su ID.
+
 ```bash
 curl -X GET http://localhost:8081/api/students/1
 ```
 
 ### POST /api/students
+
 Crea un nuevo estudiante.
+
 ```bash
 curl -X POST http://localhost:8081/api/students \
   -H "Content-Type: application/json" \
@@ -269,36 +275,42 @@ src/main/java/com/example/Profesor/
 ### **Base URL:** `http://localhost:8082/api/profesores`
 
 ### 1. GET - Listar todos con Paginación
+
 ```http
 GET /api/profesores?page=0&size=10
 ```
 **Respuesta:** Página de profesores con metadatos de paginación
 
 ### 2. GET - Buscar por Nombre
+
 ```http
 GET /api/profesores/search?nombre=Carlos
 ```
 **Respuesta:** Lista de profesores que contienen "Carlos" en el nombre
 
 ### 3. GET - Buscar por Email
+
 ```http
 GET /api/profesores/search?email=gomez@universidad.edu
 ```
 **Respuesta:** Lista de profesores que contienen el email especificado
 
 ### 4. GET - Buscar por Nombre O Email
+
 ```http
 GET /api/profesores/search?nombre=Carlos&email=gomez
 ```
 **Respuesta:** Lista de profesores que coinciden con cualquiera de los criterios
 
 ### 5. GET - Obtener por ID
+
 ```http
 GET /api/profesores/{id}
 ```
 **Respuesta:** Profesor con el ID especificado
 
 ### 6. POST - Crear Profesor
+
 ```http
 POST /api/profesores
 Content-Type: application/json
@@ -314,6 +326,7 @@ Content-Type: application/json
 **Respuesta:** Profesor creado con ID generado (201 Created)
 
 ### 7. PUT - Actualización Completa
+
 ```http
 PUT /api/profesores/{id}
 Content-Type: application/json
@@ -329,6 +342,7 @@ Content-Type: application/json
 **Respuesta:** Profesor actualizado (todos los campos)
 
 ### 8. PATCH - Actualización Parcial
+
 ```http
 PATCH /api/profesores/{id}
 Content-Type: application/json
@@ -341,6 +355,7 @@ Content-Type: application/json
 **Respuesta:** Profesor actualizado (solo campos enviados)
 
 ### 9. DELETE - Eliminar Profesor
+
 ```http
 DELETE /api/profesores/{id}
 ```
@@ -548,6 +563,3 @@ mvn spring-boot:run # Ejecutar aplicación
 ---
 
 *Microservicio Profesor implementado exitosamente con arquitectura limpia y todas las funcionalidades requeridas.*
-#   m i c r o s e r v i c i o s E x a m e n  
- #   m i c r o s e r v i c i o s E x a m e n  
- 
